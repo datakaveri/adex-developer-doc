@@ -33,3 +33,18 @@ After discovering a private resource from the catalogue, users can obtain a toke
 ```
 
 It should be noted that unless an explicit policy is specified by the AIP in the ADeX Authorization Server,users cannot obtain an access token for the secure resource.
+
+## Obtaining Token for a *Personal Data*
+
+In order to obtain a token to access personal data of a data principal, the AIU must have a valid consent artifact for the resource and data principal, and data sharing agreement with the AIP for the resource.
+The request body of token must include a context field which contains ppbNumber.
+```json
+{
+  "itemId": "rythubandhu.telangana.gov.in/1234567890abcdef1234567890abcdef12345678/gateway.adex.org.in/rythubandhu-schemes/get-farmer-crop-data",
+  "itemType": "resource",
+  "role": "consumer",
+  "context": {
+    "ppbNumber": "T01050091234"
+  }
+}
+```

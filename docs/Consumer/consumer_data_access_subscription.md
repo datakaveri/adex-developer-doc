@@ -30,7 +30,7 @@ Users can obtain a token using the [Create Token APIs](https://ts.adex.org.in/au
 }
 ```
 
-It should be noted that unless an explicit policy for subscription is specified by the AIP in the ADeX Authorization Server, users cannot obtain an access token for the secure resource.
+It should be noted that unless an explicit policy for subscription is specified by the AIP, users cannot obtain an access token for the secure resource.
 
 ### Creating a New Subscription
 
